@@ -10,7 +10,6 @@ const FeedbackStats = ({ feedback }) => {
 
     // display one decimal, whole number if decimal is 0
     average.toFixed(1).replace(/[.,]0$/, '');
-
     return isNaN(average) ? 0 : average;
   };
 
