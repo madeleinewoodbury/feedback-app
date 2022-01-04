@@ -163,6 +163,11 @@ input:focus {
   background: #ff6a95;
 }
 
+.btn-link {
+  text-decoration: none;
+  padding: 5px 8px;
+}
+
 .btn:hover {
   transform: scale(0.98);
   opacity: 0.9;
@@ -186,9 +191,8 @@ input:focus {
 }
 
 .about-link {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
+  float: right;
+  padding-right: 1rem;
   color: #fff;
   cursor: pointer;
 }

@@ -1,4 +1,6 @@
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+import { FaQuestion } from 'react-icons/fa';
 
 const Header = ({ text, bgColor, textColor }) => {
   const headerStyles = {
@@ -10,6 +12,11 @@ const Header = ({ text, bgColor, textColor }) => {
     <header style={headerStyles}>
       <div className='container'>
         <h2>{text}</h2>
+      </div>
+      <div className='about-link'>
+        <Link to='/about'>
+          <FaQuestion size={20} />
+        </Link>
       </div>
     </header>
   );
