@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 import SelectInput from './SelectInput';
 
 const RatingSelect = ({ select }) => {
@@ -23,6 +24,10 @@ const RatingSelect = ({ select }) => {
       ))}
     </ul>
   );
+};
+
+RatingSelect.propTypes = {
+  select: PropTypes.func.isRequired,
 };
 
 export default RatingSelect;
