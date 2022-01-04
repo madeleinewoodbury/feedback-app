@@ -4,14 +4,13 @@ import FeedbackContext from '../context/FeedbackContext';
 const FeedbackStats = () => {
   const { feedback } = useContext(FeedbackContext);
   const getAverage = () => {
-    // Calculate average rating
+    //Calculate average rating
     let average =
       feedback.reduce((acc, cur) => {
         return acc + cur.rating;
       }, 0) / feedback.length;
 
-    // display one decimal, whole number if decimal is 0
-    average.toFixed(1).replace(/[.,]0$/, '');
+    average = Math.round(average * 10) / 10;
     return isNaN(average) ? 0 : average;
   };
 
