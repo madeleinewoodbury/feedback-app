@@ -2,7 +2,7 @@
 
 This is a project from my React Front To Back 2022 course by Brad Traversy. It allows users to add, update and delete feedback. It uses a mock REST api with json-server.
 
-### [View Site]('https://friendly-mahavira-5c5413.netlify.app/')
+### [View Site](https://friendly-mahavira-5c5413.netlify.app/)
 
 # Usage
 
